@@ -45,8 +45,6 @@ def main():
     produtos_total = []
     for prod in produtos_list:
         st.write(prod)
-        st.write(j)
-        st.write(k)
         qtd_prod = st.number_input('Quantidade :', key=j, format='%f')
         preco_unit = st.number_input('Preço unit. :', key=k, format='%f')
         
