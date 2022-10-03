@@ -37,13 +37,16 @@ def main():
     st.markdown('---')
     st.subheader('Quantidade e Preço')
     
-    j=0
+    j=10
+    
     k=100
     peso_sug=0
     
     produtos_total = []
     for prod in produtos_list:
         st.write(prod)
+        st.write(j)
+        st.write(k)
         qtd_prod = st.number_input('Quantidade :', key=j, format='%f')
         preco_unit = st.number_input('Preço unit. :', key=k, format='%f')
         
