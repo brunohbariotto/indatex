@@ -26,10 +26,10 @@ def main():
     st.markdown('---')
     
     st.subheader('Produtos')
-    qtd_prod = st.number_input('Quantos Produtos diferentes :', min_value=0, max_value=10)
+    num_prod = st.number_input('Quantos Produtos diferentes :', min_value=0, max_value=10, key=2022)
     
     produtos_list = []
-    for i in range(1,qtd_prod+1):
+    for i in range(1,num_prod+1):
     
         produto = st.selectbox('Escolha o Produto: ', produtos_df, key=i)
         produtos_list.append(produto)
